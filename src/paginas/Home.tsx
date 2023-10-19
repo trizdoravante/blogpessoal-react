@@ -1,6 +1,7 @@
 import React from 'react';
-import homeLogo from '.././assets/home.gif'
+import homeLogo from '../../src/assets/home.png'
 import './Home.css';
+import ListaPostagens from '../componentes/postagem/listaPostagens/ListaPostagens.tsx';
 
 
 function Home() {
@@ -19,12 +20,12 @@ function Home() {
             </div>
   
             <div className="flex justify-center ">
-              <img src={homeLogo} alt="home.gif" className='w-2/3' />
+              <img src={homeLogo} alt="" className='w-2/3' />
       
             </div>
           </div>
         </div>
-      
+        <ListaPostagens />
       </>
     );
 }
